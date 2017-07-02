@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="fruitStoreApp">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+
+        <!-- bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <title>Fruit Store</title>
+    </head>
+    <body>
+        <nav-bar></nav-bar>
+        <div class="row" id="main-page">
+            <div class="col-xs-9"><store-page></store-page></div>
+            <div class="col-xs-3"><shopping-cart-page></shopping-cart-page></div>
+        </div>
+        
+        
+
+        <!-- AngularJS -->
+        <script src="https://code.angularjs.org/1.6.3/angular.js"></script>
+
+        <script src="./app.module.js"></script>
+        <script src="./app-services/inventory.service.js"></script>
+        <script src="./app-services/cart.service.js"></script>
+
+        <script src="./store-page/store-page.component.js"></script>
+        <script src="./nav-bar/nav-bar.component.js"></script>
+        <script src="./shopping-cart-page/shopping-cart-page.component.js"></script>
+        
+
+    </body>
+</html>

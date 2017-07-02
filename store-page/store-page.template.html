@@ -1,0 +1,16 @@
+<div class="store-page wrapper">
+    <div class="row">
+        <div class="col-md-3 col-xs-12" ng-repeat="item in $ctrl.allItems track by $index">
+            <div class="thumb1 thumbnail">
+                <img ng-src="{{item.imgSrc}}" alt="{{item.itemName}}">
+                <div class="caption text-center">
+                    <p class="text-capitalize">{{item.itemName}}</p>
+                    <p>
+                        <span class="item-price">{{item.price | currency}} </span> {{item.quantityRemaining}} In Stock</span>
+                    </p>
+                    <p><a ng-click="$ctrl.onAddToCart($index)" class="btn" role="button">Add to Cart</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

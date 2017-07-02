@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+.store-page img {
+    max-height: 125px;
+    min-height: 125px;
+}
+
+.store-page {
+    font-family: 'Roboto Slab', serif;
+    margin-left: 35px;
+    margin-top: 25px;
+    font-size: 15px;
+}
+
+.item-price {
+    font-size: 30px;
+    font-weight: bold;
+}
+.store-page .btn {
+    background-color: #00cc99;
+    color: #333333;
+    width: 85%;
+}
+.store-page .thumbnail {
+    border: 2px solid #00cc99;
+}

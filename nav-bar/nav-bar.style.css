@@ -1,0 +1,38 @@
+nav {
+    margin-top: 30px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 30px;
+    display: flex;
+}
+
+nav li {
+    margin: 0 5px;
+}
+
+nav a {
+    text-decoration: none;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    padding: 0 40px;
+    background-color: #00cc99;
+    display: inline-block;   
+}
+
+nav a:hover {
+    /*background-color: green;*/
+    text-decoration: none;
+    color: #fff;
+}
+
+.break-line {
+    margin: 0;
+    padding: 0;
+    border: 3px solid #00cc99;
+    width: 100%;
+}

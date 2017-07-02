@@ -1,0 +1,29 @@
+<div class="shopping-cart-page">
+    <div class="row">
+        <div class="col-xs-12">
+            <h2 class="text-center"><strong>Shopping Cart</strong></h2>
+            <h5 class="text-center">{{$ctrl.cartItems.length}} items"</h5>
+        </div>
+        <div class="col-xs-12 each-item" ng-repeat="item in $ctrl.cartItems track by $index">
+            <div class="one text-capitalize">{{item.itemName}}</div>
+            <div class="one">
+                <img ng-src="{{item.imgSrc}}" alt="{{item.itemName}}" >
+                <button type="button" ng-click="$ctrl.onDecrementItemQuantity($index)">-</button>
+                <h4>{{item.cartQuantity}}</h4>
+                <button type="button" ng-click="$ctrl.onIcrementItemQuantity($index)">+</button>
+            </div>
+            <div class="one">
+                <p>@ {{item.price | currency}} each = {{item.price*item.cartQuantity | currency}} </p>
+                <a role="button" ng-click="$ctrl.onDeleteItem($index)">Delete</a>
+            </div>
+        </div>
+        <div class="col-xs-12"><hr class="pull-right"></div>
+        <div class="col-xs-12">
+            <div class="total">
+                <p><strong>Total: {{$ctrl.cartTotal | currency}}</strong> 
+                <br><a role="button" ng-click="$ctrl.onEmptyCart()" >Empty Cart</a></p><br>
+                <p><button ng-click="$ctrl.onConfirmPurchase()" class="btn" role="button">Confirm Purchase</button></p>
+            </div>
+        </div>
+    </div>
+</div>
